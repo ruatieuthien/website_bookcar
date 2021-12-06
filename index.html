@@ -1,0 +1,542 @@
+<html lang="vi">
+<configuration>
+  <system.webServer>
+    <staticContent>
+      <mimeMap fileExtension=".json" mimeType="application/json" />
+    </staticContent>
+    <modules runAllManagedModulesForAllRequests="true" />
+  </system.webServer>
+</configuration>
+
+<head>
+  <!-- include head.html -->
+  <title>Trang web Di Xe Nha</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<!-- favicon -->
+<link href="/images/favicon.ico" type="image/x-icon" rel="icon">
+<!-- meta social -->
+<meta name="twitter:card" content="" />
+<meta name="twitter:site" content="" />
+<meta name="twitter:creator" content="" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content="">
+<meta property="og:title" content="" />
+<meta property="og:type" content="">
+<meta property="og:url" content="" />
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+
+<link rel="manifest" href="/manifest.json">
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Short name web app">
+<meta name="apple-mobile-web-app-title" content="Short name web app">
+<meta name="theme-color" content="#00a849">
+<meta name="msapplication-navbutton-color" content="#00a849">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="msapplication-starturl" content="/">
+
+
+  <!-- include styles.html -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab&display=swap"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+<!-- boostrap -->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" -->
+    <!-- integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"> -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- build:css(.tmp) style/style.min.css -->
+<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+<!-- endbuild -->
+</head>
+
+<body class="wrapper">
+  <header class="main_header">
+  <div class="container_header">
+    <div class="left_header">
+      <a href="#">
+        <p>Dixenha</p>
+        <div class="logo"></div>
+      </a>
+    </div>
+    <ul class="nav_list" id="nav_active">
+      <li class="nav_list_item active"> <a href="#" class="nav_list_item--link"> Trang chủ </a> </li>
+      <li class="nav_list_item"><a href="#"  class="nav_list_item--link"> Tuyến </a> </li>
+      <li class="nav_list_item"> <a href="#" class="nav_list_item--link"> Liên hệ </a> </li>
+      <li class="nav_list_item"> <a href="#" class="nav_list_item--link">
+          <div class="car_icon"> </div> Đặt xe </a> 
+      </li>
+    </ul>
+    <div class="reponsive_menu">
+      <ul class="reponsive_nav_list" id="reponsive_nav_active">
+        <li class="reponsive_nav_list_item active"> <a href="#" class="reponsive_nav_list_item--link"> Trang chủ </a> </li>
+        <li class="reponsive_nav_list_item"><a href="#"  class="reponsive_nav_list_item--link"> Tuyến </a> </li>
+        <li class="reponsive_nav_list_item"> <a href="#" class="reponsive_nav_list_item--link"> Liên hệ </a> </li>
+        <li class="reponsive_nav_list_item"> <a href="#" class="reponsive_nav_list_item--link">
+            <div class="car_icon"> </div> Đặt xe </a> 
+        </li>
+      </ul>
+    </div>
+    <div class="overlay_menu"></div>
+    <div class="btn_menu">
+      <i class="fa fa-bars" style="font-size:24px"></i>
+    </div>
+  </div>
+</header>
+
+  <section class="wrapper_a">
+    <div class="containers">
+      <div class="slideshow_banner">
+        <div class="slideshow_item">
+          <div class="box_left">
+            <div class="wrapper_a_info">
+              <p class="first_info"> An toàn - Tiện lợi</p>
+              <p class="second_info"> Tiết kiệm chi phí</p>
+              <p class="last_info"> <span style="font-weight: 400;">Trải nghiệm</span> như xe <span
+                  style="font-weight: 400;color: #AF3A87;">gia đình</span> </p>
+            </div>
+            <div class="wrapper_a_contact">
+              <a href="#" class="wrapper_a_contact--link">
+                <div class="alo_icon"> </div>
+                <div class="contact_info">
+                  <p class="contact_absolute"> Đặt nhanh </p>
+                  <p class="phone_contact"> 0869 90 60 70</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="box_right">
+            <img src="images/background_wrapper_a.jpg" alt="">
+          </div>
+        </div>
+        <div class="slideshow_item">
+          <div class="box_left">
+            <div class="wrapper_a_info">
+              <p class="first_info"> An toàn - Tiện lợi</p>
+              <p class="second_info"> Tiết kiệm chi phí</p>
+              <p class="last_info"> <span style="font-weight: 400;">Trải nghiệm</span> như xe <span
+                  style="font-weight: 400;color: #AF3A87;">gia đình</span> </p>
+            </div>
+            <div class="wrapper_a_contact">
+              <a href="#" class="wrapper_a_contact--link">
+                <div class="alo_icon"> </div>
+                <div class="contact_info">
+                  <p class="contact_absolute"> Đặt nhanh </p>
+                  <p class="phone_contact"> 0869 90 60 70</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="box_right">
+            <img src="images/background_wrapper_a.jpg" alt="">
+          </div>
+        </div>
+        <div class="slideshow_item">
+          <div class="box_left">
+            <div class="wrapper_a_info">
+              <p class="first_info"> An toàn - Tiện lợi</p>
+              <p class="second_info"> Tiết kiệm chi phí</p>
+              <p class="last_info"> <span style="font-weight: 400;">Trải nghiệm</span> như xe <span
+                  style="font-weight: 400;color: #AF3A87;">gia đình</span> </p>
+            </div>
+            <div class="wrapper_a_contact">
+              <a href="#" class="wrapper_a_contact--link">
+                <div class="alo_icon"> </div>
+                <div class="contact_info">
+                  <p class="contact_absolute"> Đặt nhanh </p>
+                  <p class="phone_contact"> 0869 90 60 70</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="box_right">
+            <img src="images/background_wrapper_a.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <section class="wrapper_b">
+    <div class="containers">
+      <h4> BẠN CẦN TÌM CHUYẾN XE ? </h4>
+      <form action="">
+        <div class="select_form1">
+          <select name="place" id="">
+            <option value="0"> Chọn nơi bạn muốn đến </option>
+            <option value="1"> Quảng Ngãi </option>
+            <option value="2"> Quảng Nam </option>
+            <option value="3"> Đà Nẵng </option>
+          </select>
+          <span class="arrow_down"></span>
+        </div>
+        <div class="seclect_form2">
+          <select name="location_car" id="">
+            <option value="0"> Chọn tuyến xe </option>
+            <option value="1"> Quảng Ngãi - Đà Nẵng </option>
+            <option value="2"> Quảng Ngãi - Quảng Nam </option>
+            <option value="3"> Đà Nẵng - Quảng Nam </option>
+          </select>
+          <span class="arrow_down"></span>
+        </div>
+        <button type="submit" class="btn_search"> Tìm kiếm </button>
+      </form>
+      <div class="wrapper_b_background"></div>
+    </div>
+  </section>
+  <section class="wrapper_c">
+    <div class="containers">
+      <div class="content_c">
+        <div class="heading">
+          <h4>Tiện ích</h4>
+          <h3>KHÁCH HÀNG NHƯ NGƯỜI THÂN</h3>
+        </div>
+        <div class="content_grid">
+          <div class="content_grid_item">
+            <div class="content_grid_item_info">
+              <div class="monkey_icon"></div>
+              <div class="right_info">
+                <h5> giá cả </h5>
+                <div class="more_info">
+                  <p> Rẻ hơn cả taxi truyền thống và các loại xe khác tại khu vực Miền Trung.</p>
+                  <p> Đi xe riêng, không bao giờ ghép chung khách. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content_grid_item">
+            <div class="content_grid_item_info">
+              <div class="monkey_icon"></div>
+              <div class="right_info">
+                <h5> giá cả </h5>
+                <div class="more_info">
+                  <p> Rẻ hơn cả taxi truyền thống và các loại xe khác tại khu vực Miền Trung.</p>
+                  <p> Đi xe riêng, không bao giờ ghép chung khách. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content_grid_item">
+            <div class="content_grid_item_info">
+              <div class="monkey_icon"></div>
+              <div class="right_info">
+                <h5> giá cả </h5>
+                <div class="more_info">
+                  <p> Hơn 150 xe các loại từ 4 đến 16 chỗ, sản xuất năm 2017, 2018.
+                  </p>
+                  <p>Quý khách có thể may mắn nếu được đón bằng các loại xe chất lượng <br> cao như: Mazda 6, Toyota
+                    Corolla Altis hoặc Camry. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content_grid_item">
+            <div class="content_grid_item_info">
+              <div class="monkey_icon"></div>
+              <div class="right_info">
+                <h5> giá cả </h5>
+                <div class="more_info">
+                  <p> Luôn luôn có xe nếu đặt trước.</p>
+                  <p style="margin-top: 25px;"> Đúng nơi đúng hẹn, tài xế nhiệt tình và kinh nghiệm. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper_d">
+    <div class="containers">
+      <div class="box_left">
+        <div class="heading">
+          <h4>Đặt xe online</h4>
+          <h3>HÂN HẠNH PHỤC VỤ QUÝ KHÁCH</h3>
+        </div>
+        <div class="form_register">
+          <form action="#" class="register">
+            <label for="fullname"> Họ tên</label>
+            <input type="text" id="fullname" placeholder="Nhập họ và tên đầy đủ của bạn...">
+            <div class="two_child_form">
+              <div class="left_form">
+                <label for="phonenumber">Số điện thoại</label>
+                <input type="text" id="phonenumber" placeholder="0905.999.000">
+                <label for="pickup-location"> Đón bạn ở? </label>
+                <input type="text" id="pickup-location" placeholder="54 Phan Chu Trinh - Hội An">
+                <label for="pickup-date"> Ngày đón </label>
+                <input type="text" id="pickup-date" placeholder="03/03/2021">
+              </div>
+              <div class="right_form">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="email@email.com">
+                <label for="destination"> Nơi bạn đến </label>
+                <input type="text" id="destination" placeholder="03 Hải Châu - Đà Nẵng">
+                <label for="pickup-time"> Giờ đón </label>
+                <div class="time_select">
+                  <select name="" id="pickup-time">
+                    <option value="0"> Chọn giờ đón bạn </option>
+                    <option value="1"> 7h00 </option>
+                    <option value="1"> 9h15 </option>
+                    <option value="1"> 11h30 </option>
+                    <option value="1"> 13h00 </option>
+                    <option value="1"> 15h00 </option>
+                    <option value="1"> 17h15 </option>
+                  </select>
+                  <span class="arrow_down"></span>
+                </div>
+              </div>
+            </div>
+            <div class="radio_form">
+              <p>Chọn loại xe</p>
+              <div class="radio_form_top">
+                <div class="radio_group">
+                  <input type="radio" id="choose_car4" name="choose_car" class="input_custom">
+                  <label for="choose_car4" class="label_custom"> 4 chỗ</label>
+                </div>
+                <div class="radio_group">
+                  <input type="radio" id="choose_car7" name="choose_car" class="input_custom">
+                  <label for="choose_car7" class="label_custom">7 chỗ</label>
+                </div>
+                <div class="radio_group">
+                  <input type="radio" id="choose_car16" name="choose_car" class="input_custom">
+                  <label for="choose_car16" class="label_custom">16 chỗ</label>
+                </div>
+              </div>
+
+              <p>Chiều đi</p>
+              <div class="radio_form_bottom">
+                <div class="radio_group">
+                  <input type="radio" id="oneway" name="trip" class="input_custom">
+                  <label for="oneway" class="label_custom">1 chiều</label>
+                </div>
+                <div class="radio_group">
+                  <input type="radio" id="roundtrip" name="trip" class="input_custom">
+                  <label for="roundtrip" class="label_custom">Khứ hồi</label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn_bookcar">Đặt xe </button>
+          </form>
+        </div>
+      </div>
+      <div class="box_right">
+        <a href="#">
+          <div class="contact_info">
+            <p class="contact_absolute"> Đặt xe nhanh qua HOTLINE </p>
+            <p class="phone_contact"> 0869 90 60 70 </p>
+          </div>
+        </a>
+        <div class="background_ss_d">
+          <div class="thumb">
+            <img src="images/background_ss_d.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrapper_e">
+    <div class="containers">
+      <div class="wrapper_e_main">
+        <div class="heading">
+          <h4>blog</h4>
+          <h3>Chia sẽ thông tin hữu ích cho hành khách</h3>
+        </div>
+        <div class="wrapper_e_main_grid">
+          <div class="wrapper_e_main_grid_item">
+            <div class="wrapper_e_main_grid_item_content">
+              <div class="main_content">
+                <a href="#">
+                  <div class="thumb">
+                    <img src="images/wrapper_e1.jpg" alt="">
+                  </div>
+                  <h4> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet... </h4>
+                  <p> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper_e_main_grid_item">
+            <div class="wrapper_e_main_grid_item_content">
+              <div class="main_content">
+                <a href="#">
+                  <div class="thumb">
+                    <img src="images/wrapper_e2.jpg" alt="">
+                  </div>
+                  <h4> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet... </h4>
+                  <p> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper_e_main_grid_item">
+            <div class="wrapper_e_main_grid_item_content">
+              <div class="main_content">
+                <a href="#">
+                  <div class="thumb">
+                    <img src="images/wrapper_e3.jpg" alt="">
+                  </div>
+                  <h4> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet... </h4>
+                  <p> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="wrapper_e_footer">
+      <div class="footer_content">
+        <div class="alo_icon"> </div>
+        <div class="contact_info">
+          <p class="contact_absolute"> HOTLINE </p>
+          <p class="phone_contact"> 0869 90 60 70</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper_f">
+    <div class="containers">
+      <div class="wrapper_f_grid">
+        <div class="wrapper_f_grid_item">
+          <div class="wrapper_f_grid_item_content">
+            <div class="logo_footer">
+                <p>Dixenha</p>
+                <div class="logo"></div>
+            </div>
+            <ul class="contact_list">
+              <li class="contact_list_item"> 
+                <div class="contact_logo_icon "></div>
+                <p> 65 Triệu Quốc Đạt - Hòa Thọ Đông - <br>
+                  Cẩm Lệ - Đà Nẵng </p>
+              </li>
+              <li class="contact_list_item"> 
+                <div class="contact_logo_icon icon2"></div>
+                <p> 0869 90 60 70 </p>
+              </li>
+              <li class="contact_list_item"> 
+                <div class="contact_logo_icon icon3"></div>
+                <p> datxe@dixenha.vn </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="wrapper_f_grid_item">
+          <div class="wrapper_f_grid_item_content">
+            <div class="heading">
+                <h4> giới thiệu </h4>
+            </div>
+            <ul class="contact_list">
+              <li class="contact_list_item"> 
+                <a href="#" class="contact_list_item--link"> <p> Về chúng tôi </p> </a> 
+              </li>
+              <li class="contact_list_item"> 
+                <a href="#" class="contact_list_item--link"> <p> Dịch vụ ưu đãi </p> </a> 
+              </li>
+              <li class="contact_list_item"> 
+                <a href="#" class="contact_list_item--link"> <p> Thông tin hãng xe </p> </a> 
+              </li>
+              <li class="contact_list_item"> 
+                <a href="#" class="contact_list_item--link"> <p> Đội ngũ  tài xế </p> </a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="wrapper_f_grid_item">
+          <div class="wrapper_f_grid_item_content">
+            <div class="heading">
+                <h4> chính sách </h4>
+            </div>
+            <ul class="contact_list">
+              <li class="contact_list_item"> 
+                <a href="#" class="contact_list_item--link"> <p>Quyền riêng tư</p> </a> 
+              </li>
+              <li class="contact_list_item"> 
+                <a href="#" class="contact_list_item--link"> <p> Sử dụng dịch vụ </p> </a> 
+              </li>
+              <li class="contact_list_item"> 
+                <a href="#" class="contact_list_item--link"> <p> Góp ý-khiếu nại </p> </a> 
+              </li>
+              <li class="contact_list_item"> 
+                <a href="#" class="contact_list_item--link"> <p> Nội dung trang web </p> </a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="wrapper_f_grid_item">
+          <div class="wrapper_f_grid_item_content">
+            <div class="heading">
+                <h4> hỗ trợ </h4>
+            </div>
+            <ul class="contact_list">
+              <li class="contact_list_item"> 
+                <a href="#" class="contact_list_item--link"> <p> Đặt xe Online </p> </a> 
+              </li>
+              <li class="contact_list_item"> 
+                <a href="#" class="contact_list_item--link"> <p> Bảng giá xe </p> </a> 
+              </li>
+              <li class="contact_list_item"> 
+                <a href="#" class="contact_list_item--link"> <p> Cẩm nang đi lại </p> </a> 
+              </li>
+              <li class="contact_list_item"> 
+                <a href="#" class="contact_list_item--link"> <p> Văn phòng đại diện </p> </a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main_footer">
+        <div class="wrapper_footer">
+                <span>© Copyright  2021 | Đi Xe Nhà</span>
+                <p>Website được phát triển bởi <span style="color:#B2CB6B";> NGOCDUY </span> </p>
+        </div>
+</footer>
+
+  <!-- include scripts.html -->
+  <!-- boostrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- build:js script/script.min.js -->
+<script type="text/javascript" src="js/slick.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<!-- endbuild -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
